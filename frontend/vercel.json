@@ -1,0 +1,19 @@
+{
+  "buildCommand": "npm run build",
+  "outputDirectory": "dist",
+  "framework": "vite",
+  "rewrites": [
+    {
+      "source": "/uploads/(.*)",
+      "destination": "http://91.226.56.44:35566/uploads/$1"
+    },
+    {
+      "source": "/api/(.*)",
+      "destination": "http://91.226.56.44:35566/api/$1"
+    },
+    {
+      "source": "/(.*)",
+      "destination": "/index.html"
+    }
+  ]
+}
